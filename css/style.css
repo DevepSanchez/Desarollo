@@ -124,17 +124,33 @@ tr .table-container {
     border-style: groove; color: red;
 }
 
+.fill-table {
+    
+    border-collapse: collapse;
+}
+
+.fill-table .title-head tr,
+.content-tbl tr,
+.fill-table .title-head tr td,
+.content-tbl tr td{
+    
+    border: .1rem solid #ccc;
+}
+
 .title-head tr th,
 .content-tbl tr td
  {
     font-size: 2rem;
     text-align: center;
     padding-right: 5rem;
+
     
 }
 
-/* .content-tbl tr td{
-    font-size: 2rem;
-    padding: 0 auto;
-    padding-right: 5rem;
-} */
+.content-tbl tr td{
+    padding-top: 2rem;
+}
+
+.content-tbl tr:nth-child(even){
+    background-color: #ccc;
+}
