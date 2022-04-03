@@ -1,77 +1,68 @@
+@import url("plugin.css"); /*HTML -> plugin.html*/
+
 *,
 *::after,
-*::before{
-    content: "";
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-html { 
-    font-size: 62.5%;
-    
+html {
+  font-size: 62.5%;
 }
 
 #head-box {
-     background-color: #379aad;
-    width: 100%;
-    height: 7.5rem;
-    }
-    
+  background-color: #379aad;
+  width: 100%;
+  height: 7.5rem;
+}
 
 .container {
-    position: relative;
-    width: 80%;    
-    margin-top: 6rem;
-    height: 17rem;
-    margin: 0 auto;
-    
-
+  position: relative;
+  width: 80%;
+  margin-top: 6rem;
+  height: 17rem;
+  margin: 0 auto;
 }
 
 .head-title {
-    font-size: 2rem;
-    text-align: left;
-    text-align: center;
-    padding-top: 1rem;
-} 
-
-.navegation{
-    width: 100%;   
-    display: flex;
-    font-size: 2rem;
-    margin-top: 4rem;
-    justify-content: space-between;
-    align-items: center;
-    
-    
+  font-size: 2rem;
+  text-align: left;
+  text-align: center;
+  padding-top: 1rem;
 }
 
-.navegation a, 
+.navegation {
+  width: 100%;
+  display: flex;
+  font-size: 2rem;
+  margin-top: 4rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navegation a,
 .navegation a:link {
-    text-decoration:none;
-    padding: 1rem 2rem;
-    background: lightskyblue;
-    border-radius: 2rem;
-    color: black;
-    line-height: 10rem;
-    font-weight: bold;
-     
-    
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background: lightskyblue;
+  border-radius: 2rem;
+  color: black;
+  line-height: 10rem;
+  font-weight: bold;
 }
 
 .navegation a:hover {
-    background-color: blue;
-    transform: scale(1.2);
-    color: white;
-    
-    }
-
-.navegation a img {
-    width: 3.6rem;
-    margin-top: 2rem;
+  background-color: blue;
+  transform: scale(1.2);
+  color: white;
 }
 
+.navegation a img {
+  width: 3.6rem;
+  margin-top: 2rem;
+}
 
 /* this is a test */
 /* _________________this is for directorio section____________________________________________________________- */
@@ -85,72 +76,59 @@ html {
   padding-top: 1rem;
   background-color: brown;
   padding-bottom: 7rem;
-
 }
 .navegate {
-    display: flex;
-    justify-content: right;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    margin-right: 2rem;
-    
-    
-   
+  display: flex;
+  justify-content: right;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
 }
 
 .box-border {
-    border-style:double;
-    height: 4rem;
-    width: 52rem;
-    padding-top: 1rem;
-    padding-left: 2rem;
-
-
+  border-style: double;
+  height: 4rem;
+  width: 52rem;
+  padding-top: 1rem;
+  padding-left: 2rem;
 }
 
 a.hyperlink {
-    /* padding: 2rem; */
-    /* background-color: lightslategray; */
-    text-align: left;
-    font-size: 1.9rem;
-    text-decoration: none;
-       
-    
+  /* padding: 2rem; */
+  /* background-color: lightslategray; */
+  text-align: left;
+  font-size: 1.9rem;
+  text-decoration: none;
 }
 
-
 tr .table-container {
-    border-radius: solid;
-    border-style: groove; color: red;
+  border-radius: solid;
+  border-style: groove;
+  color: red;
 }
 
 .fill-table {
-    
-    border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 .fill-table .title-head tr,
 .content-tbl tr,
 .fill-table .title-head tr td,
-.content-tbl tr td{
-    
-    border: .1rem solid #ccc;
+.content-tbl tr td {
+  border: 0.1rem solid #ccc;
 }
 
 .title-head tr th,
-.content-tbl tr td
- {
-    font-size: 2rem;
-    text-align: center;
-    padding-right: 5rem;
-
-    
+.content-tbl tr td {
+  font-size: 2rem;
+  text-align: center;
+  padding-right: 5rem;
 }
 
-.content-tbl tr td{
-    padding-top: 2rem;
+.content-tbl tr td {
+  padding-top: 2rem;
 }
 
-.content-tbl tr:nth-child(even){
-    background-color: #ccc;
+.content-tbl tr:nth-child(even) {
+  background-color: #ccc;
 }
