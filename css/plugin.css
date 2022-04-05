@@ -1,11 +1,28 @@
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #f1f3f5;
+  border-radius: 5rem;
+  -webkit-border-radius: 5rem;
+  -moz-border-radius: 5rem;
+  -ms-border-radius: 5rem;
+  -o-border-radius: 5rem;
+}
+
 .head_content {
   display: flex;
   position: absolute;
-  width: 100%;
+  width: 99%;
   justify-content: center;
   align-items: center;
   height: 7.5rem;
-  z-index: 1000;
+  z-index: 3;
 }
 
 .container-fluid {
@@ -49,12 +66,38 @@
   margin-left: 3rem;
 }
 
+.menu__main a:nth-child(2) {
+  border: 0.2rem solid #f1f3f5;
+  padding: 0.6rem 1rem;
+
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+}
+
 .menu__main a:hover {
   color: #ced4da;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-bottom-style: solid;
+  transition: all 300ms;
+  -webkit-transition: all 300ms;
+  -moz-transition: all 300ms;
+  -ms-transition: all 300ms;
+  -o-transition: all 300ms;
+}
 
+.menu__main a:hover:first-child {
+  border-bottom: 0.1rem solid #ced4da;
+  padding-bottom: 0.5rem;
+}
+
+.menu__main a:hover:nth-child(2) {
+  border: 0.2rem solid #ced4da;
   transition: all 300ms;
   -webkit-transition: all 300ms;
   -moz-transition: all 300ms;
@@ -72,6 +115,93 @@
   stroke: #f1f3f5;
 }
 
+.icon_close {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+.icon_close .icon_close-close {
+  cursor: pointer;
+}
+
+/*aditional menu*/
+.menu--main {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  width: 35rem;
+  background: #f1f3f5;
+  z-index: 4;
+  padding: 0 1.5rem;
+  transition: all ease 300ms;
+  -webkit-transition: all ease 300ms;
+  -moz-transition: all ease 300ms;
+  -ms-transition: all ease 300ms;
+  -o-transition: all ease 300ms;
+}
+
+.active {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 35rem;
+  background: #f1f3f5;
+  z-index: 4;
+  padding: 0 1.5rem;
+  transition: all ease 300ms;
+  -webkit-transition: all ease 300ms;
+  -moz-transition: all ease 300ms;
+  -ms-transition: all ease 300ms;
+  -o-transition: all ease 300ms;
+}
+
+.menu_list {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+
+  align-items: flex-start;
+  margin: 5rem 0;
+  gap: 2.5rem;
+  text-align: left;
+}
+
+.list-options {
+  list-style: none;
+  margin-left: 2rem;
+}
+
+.list-options li {
+  margin-bottom: 2rem;
+}
+
+.list-options li:last-child {
+  margin-bottom: 0;
+}
+
+.menu_list a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-family: sans-serif;
+  font-weight: 700;
+  margin-left: 3rem;
+}
+
+.menu_list a:hover {
+  color: #868e96;
+}
+
+.icon_colors {
+  stroke: #343a40;
+  width: 3rem;
+}
+
+/*---------Slide------------*/
+
 .image_slide {
   position: relative;
   --opacidad-negro: 0.5;
@@ -80,7 +210,8 @@
       rgba(0, 0, 0, var(--opacidad-negro))
     ),
     url("../img/slide_one.jpg");
-  width: 100vw;
+  /* width: 99vw; */
+  max-width: 100%;
   height: 80vh;
   background-size: cover;
   background-position: center;
@@ -105,4 +236,74 @@
 
 .slide p {
   font-size: 2rem;
+}
+
+/*--------------SECTION INFO---------------*/
+.section_info {
+  display: grid;
+  max-width: 100%;
+  height: 60vh;
+  border-top-style: solid;
+  border-top-width: 1rem;
+  color: #74c0fc;
+}
+
+.info_head {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+}
+
+.info_information {
+  display: block;
+  padding: 0 8rem;
+}
+
+.info_information figure {
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: #e7f5ff;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.info_information h2 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 2rem;
+  color: #495057;
+  margin-bottom: 1.5rem;
+}
+
+.info_information p {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  color: #868e96;
+  line-height: 1.5;
+  /* letter-spacing: 1rem; */
+}
+
+.icon_info {
+  margin: 0.7rem 0.7rem;
+  width: 3rem;
+  stroke: #74c0fc;
+}
+
+/*---------------ABOUT---------------------*/
+
+.about-us {
+  display: grid;
+  max-width: 100%;
+  height: 50vh;
+  background-color: #495057;
 }

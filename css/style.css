@@ -1,4 +1,5 @@
 @import url("plugin.css"); /*HTML -> plugin.html*/
+@import url("login.css"); /*HTML -> login.html & register.html*/
 
 *,
 *::after,
@@ -10,6 +11,8 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 #head-box {
@@ -131,4 +134,14 @@ tr .table-container {
 
 .content-tbl tr:nth-child(even) {
   background-color: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 44.1%;
+  }
+
+  .image_slide {
+    height: 50vh;
+  }
 }
