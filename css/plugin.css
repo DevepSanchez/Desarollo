@@ -210,8 +210,7 @@ html::-webkit-scrollbar-thumb {
       rgba(0, 0, 0, var(--opacidad-negro))
     ),
     url("../img/slide_one.jpg");
-  /* width: 99vw; */
-  max-width: 100%;
+  width: 100vw;
   height: 80vh;
   background-size: cover;
   background-position: center;
