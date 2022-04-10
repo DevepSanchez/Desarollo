@@ -121,10 +121,11 @@ html {
 .box-border {
     border-style:groove;
     height: 6rem;
-    width: 55rem;
+    width: 60rem;
     padding-top: 1rem;
     background-color:azure;
     border-radius: 3rem;
+    padding-right: 3rem;
  
 
 }
