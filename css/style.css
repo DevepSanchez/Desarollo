@@ -12,8 +12,20 @@ html {
     
 }
 
+#myvideo {
+    position: fixed;
+    /* position: fixed; */
+    /* right: 0;
+    bottom: 15rem; */
+    width: 30%;
+    height: 150%;
+    right: 40%;
+
+   
+  }
+
 #head-box {
-     background-color: #379aad;
+     background-color: rgb(197, 187, 187);
     width: 100%;
     height: 7.5rem;
     }
@@ -34,6 +46,7 @@ html {
     text-align: left;
     text-align: center;
     padding-top: 1rem;
+    /* color: white; */
 } 
 
 .navegation{
@@ -51,7 +64,8 @@ html {
 .navegation a:link {
     text-decoration:none;
     padding: 1rem 2rem;
-    background: lightskyblue;
+    /* background: white; */
+    background: rgb(197, 187, 187);
     border-radius: 2rem;
     color: black;
     line-height: 10rem;
@@ -61,7 +75,7 @@ html {
 }
 
 .navegation a:hover {
-    background-color: blue;
+    background-color: red;
     transform: scale(1.2);
     color: white;
     
@@ -83,7 +97,7 @@ html {
   width: 100%;
   height: 7.5rem;
   padding-top: 1rem;
-  background-color: brown;
+  background-color: lightskyblue;
   padding-bottom: 7rem;
 
 }
@@ -121,7 +135,23 @@ a.hyperlink {
 
 tr .table-container {
     border-radius: solid;
-    border-style: groove; color: red;
+    border-style: groove; color: lightskyblue;
+   
+}
+
+.fill-table {
+    
+    border-collapse: collapse;
+    margin: 0 auto;
+    
+}
+
+.fill-table .title-head tr,
+.content-tbl tr,
+.fill-table .title-head tr td,
+.content-tbl tr td{
+    
+    border: .1rem solid #ccc;
 }
 
 .title-head tr th,
@@ -129,12 +159,19 @@ tr .table-container {
  {
     font-size: 2rem;
     text-align: center;
-    padding-right: 5rem;
+    padding: 20px;
+    
+   
+   
+  
+
     
 }
 
-/* .content-tbl tr td{
-    font-size: 2rem;
-    padding: 0 auto;
-    padding-right: 5rem;
-} */
+.content-tbl tr td{
+    padding-top: 2rem;
+}
+
+.content-tbl tr:nth-child(even){
+    background-color: #ccc;
+}
