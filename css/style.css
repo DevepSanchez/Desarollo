@@ -1,43 +1,36 @@
 *,
 *::after,
-*::before{
+*::before {
     content: "";
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html { 
+html {
     font-size: 62.5%;
-    
+
 }
 
-#myvideo {
-    position: fixed;
-    /* position: fixed; */
-    /* right: 0;
-    bottom: 15rem; */
-    width: 30%;
-    height: 150%;
-    right: 40%;
-
-   
-  }
+.index-body {
+    background-image: url(/img/Dark\ Blue.png);
+}
 
 #head-box {
-     background-color: rgb(197, 187, 187);
+    background-color: rgb(197, 187, 187);
     width: 100%;
     height: 7.5rem;
-    }
-    
+}
+
 
 .container {
     position: relative;
-    width: 80%;    
+    width: 80%;
     margin-top: 6rem;
     height: 17rem;
     margin: 0 auto;
     
+
 
 }
 
@@ -47,22 +40,22 @@ html {
     text-align: center;
     padding-top: 1rem;
     /* color: white; */
-} 
+}
 
-.navegation{
-    width: 100%;   
+.navegation {
+    width: 100%;
     display: flex;
     font-size: 2rem;
     margin-top: 4rem;
     justify-content: space-between;
     align-items: center;
-    
-    
+
+
 }
 
-.navegation a, 
+.navegation a,
 .navegation a:link {
-    text-decoration:none;
+    text-decoration: none;
     padding: 1rem 2rem;
     /* background: white; */
     background: rgb(197, 187, 187);
@@ -70,16 +63,16 @@ html {
     color: black;
     line-height: 10rem;
     font-weight: bold;
-     
-    
+
+
 }
 
 .navegation a:hover {
-    background-color: red;
+    background-color: rgb(119, 199, 199);
     transform: scale(1.2);
     color: white;
-    
-    }
+
+}
 
 .navegation a img {
     width: 3.6rem;
@@ -87,39 +80,69 @@ html {
 }
 
 
-/* this is a test */
 /* _________________this is for directorio section____________________________________________________________- */
 
 #head-directorio h1 {
-  text-align: center;
-  font-size: 4rem;
-  border-style: double;
-  width: 100%;
-  height: 7.5rem;
-  padding-top: 1rem;
-  background-color: lightskyblue;
-  padding-bottom: 7rem;
+    text-align: center;
+    font-size: 4rem;
+    border-style: double;
+    width: 100%;
+    height: 7.5rem;
+    padding-top: 1rem;
+    background-color: rgb(197, 187, 187);
+    padding-bottom: 7rem;
 
 }
+
 .navegate {
     display: flex;
     justify-content: right;
     margin-top: 2rem;
     margin-bottom: 1rem;
     margin-right: 2rem;
-    
-    
-   
+
+
+
+
 }
 
 .box-border {
-    border-style:double;
-    height: 4rem;
-    width: 52rem;
+    border-style:groove;
+    height: 6rem;
+    width: 60rem;
     padding-top: 1rem;
-    padding-left: 2rem;
+    background-color:azure;
+    border-radius: 3rem;
+    padding-right: 3rem;
+ 
+
+}
+
+.box-border ul li {
+    display: inline-block;
+    
+}
+
+.box-border ul li a {
+    color: blue;
+    border-radius: 1rem;
+}
+.box-border ul li a,
+.box-border ul li a:link {
+    padding: 1rem;
+    line-height: 3.5rem;
+    
+    
+    
 
 
+}
+
+.box-border ul {
+    text-align: right;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;    
+    
 }
 
 a.hyperlink {
@@ -128,50 +151,113 @@ a.hyperlink {
     text-align: left;
     font-size: 1.9rem;
     text-decoration: none;
-       
+    
+
+
+}
+
+#mysearch {
+    border-radius: 3rem;
+    border-style:solid;
+    max-width: fit-content;
+    padding: 1rem 1rem 1rem 1rem;
+    margin-left: 0.5rem;
+    background-color: rgb(235, 242, 247);
+    font-weight: bold;
     
 }
 
+a.hyperlink:hover {
+    background-color: rgb(139, 180, 180);
 
-tr .table-container {
-    border-radius: solid;
-    border-style: groove; color: lightskyblue;
-   
 }
+
+
+/* tr .table-container {
+    border-radius: solid;
+    border-style: groove;
+    color: lightskyblue;
+    padding-bottom: 15rem;
+   
+
+} */
 
 .fill-table {
-    
-    border-collapse: collapse;
+
+    border-collapse: separate;
     margin: 0 auto;
-    
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+
+
 }
 
 .fill-table .title-head tr,
 .content-tbl tr,
 .fill-table .title-head tr td,
-.content-tbl tr td{
-    
-    border: .1rem solid #ccc;
+.content-tbl tr td {
+
+    /* border: .1rem solid rgb(64, 72, 179); */
 }
 
 .title-head tr th,
-.content-tbl tr td
- {
+.content-tbl tr td {
     font-size: 2rem;
     text-align: center;
-    padding: 20px;
-    
-   
-   
-  
+    padding: 3.5rem;
 
-    
 }
 
-.content-tbl tr td{
-    padding-top: 2rem;
+.title-head tr th {
+    background-color: rgb(119, 199, 199);
+    border-style: none;
+    border-radius: 2rem;
+
+
+
 }
 
-.content-tbl tr:nth-child(even){
-    background-color: #ccc;
+.content-tbl tr td {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-radius: 1rem;
+
+
+}
+
+.content-tbl tr:hover {
+    background-color: rgb(139, 180, 180);
+
+
+
+}
+
+.content-tbl tr:nth-child(odd) {
+    background-color: rgb(229, 226, 226);
+}
+
+.content-tbl tr td img {
+    width: 10rem;
+    display: none;
+}
+
+.content-tbl tr td a:hover>img {
+    display: block;
+}
+
+.title-head tr th:nth-child(7) {
+    padding: 1rem;
+    width: 3rem;
+
+}
+
+.content-tbl tr td:nth-child(2) {
+    font-weight: bold;
+
+}
+
+.content-tbl tr td:nth-child(8) {
+    font-size: 1.5rem;
+    padding: 0 1rem;
+
 }
