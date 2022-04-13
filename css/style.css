@@ -16,19 +16,6 @@ html {
     background-image: url(/img/Dark\ Blue.png);
 }
 
-#myvideo {
-    position: fixed;
-    /* position: fixed; */
-    /* right: 0;
-    bottom: 15rem; */
-    width: 30%;
-    height: 150%;
-    right: 40%;
-
-
-
-}
-
 #head-box {
     background-color: rgb(197, 187, 187);
     width: 100%;
@@ -42,6 +29,7 @@ html {
     margin-top: 6rem;
     height: 17rem;
     margin: 0 auto;
+    
 
 
 }
