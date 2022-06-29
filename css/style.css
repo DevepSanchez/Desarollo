@@ -1,3 +1,4 @@
+/****************************Esta es la seccion de la pagina de INICIO***************************/
 *,
 *::after,
 *::before {
@@ -9,40 +10,40 @@
 
 html {
     font-size: 62.5%;
+        
 
 }
 
-.index-body {
-    background-image: url(/img/Dark\ Blue.png);
+.cuerpo-pagina-principal {
+    background-image: url(/img/DarkBlue.png);
 }
 
-#head-box {
+#caja-titulo-principal {
     background-color: rgb(197, 187, 187);
     width: 100%;
     height: 7.5rem;
 }
 
+.texto-titulo-principal {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 1rem;
 
-.container {
+}
+
+
+.caja-menu-principal {
     position: relative;
     width: 80%;
     margin-top: 6rem;
     height: 17rem;
     margin: 0 auto;
-    
 
 
 }
 
-.head-title {
-    font-size: 2rem;
-    text-align: left;
-    text-align: center;
-    padding-top: 1rem;
-    /* color: white; */
-}
 
-.navegation {
+.navegacion-menu-principal {
     width: 100%;
     display: flex;
     font-size: 2rem;
@@ -53,36 +54,47 @@ html {
 
 }
 
-.navegation a,
-.navegation a:link {
+.navegacion-menu-principal a,
+.navegacion-menu-principal a:link {
     text-decoration: none;
-    padding: 1rem 2rem;
-    /* background: white; */
+    padding: 1rem 4rem;
+    padding-top: 0.1rem;
     background: rgb(197, 187, 187);
     border-radius: 2rem;
     color: black;
-    line-height: 10rem;
+    line-height: 4rem;
     font-weight: bold;
+ 
 
 
 }
 
-.navegation a:hover {
+.navegacion-menu-principal a img  {
+    margin: 0 auto;
+    display: block;
+
+    
+    
+    
+}
+.navegacion-menu-principal a:hover {
     background-color: rgb(119, 199, 199);
     transform: scale(1.2);
     color: white;
 
 }
 
-.navegation a img {
+.navegacion-menu-principal a img {
     width: 3.6rem;
     margin-top: 2rem;
 }
 
 
-/* _________________this is for directorio section____________________________________________________________- */
+/****************************Esta es la seccion del DIRECTORIO TELEFONICO***************************/
+/****************************Esta es la seccion del DIRECTORIO TELEFONICO***************************/
+/****************************Esta es la seccion del DIRECTORIO TELEFONICO***************************/
 
-#head-directorio h1 {
+#titulo-directorio h1 {
     text-align: center;
     font-size: 4rem;
     border-style: double;
@@ -94,95 +106,81 @@ html {
 
 }
 
-.navegate {
+.navegacion-de-paginas {
     display: flex;
     justify-content: right;
     margin-top: 2rem;
     margin-bottom: 1rem;
     margin-right: 2rem;
-
-
-
-
 }
 
-.box-border {
-    border-style:groove;
+.caja-menu-navegacion {
+    border-style: groove;
     height: 6rem;
     width: 60rem;
     padding-top: 1rem;
-    background-color:azure;
+    background-color: rgb(225, 243, 243);
     border-radius: 3rem;
-    padding-right: 3rem;
- 
+    padding-right: 1rem;
+
 
 }
 
-.box-border ul li {
+.caja-menu-navegacion ul li {
     display: inline-block;
-    
+
 }
 
-.box-border ul li a {
+.caja-menu-navegacion ul li a {
     color: blue;
     border-radius: 1rem;
 }
-.box-border ul li a,
-.box-border ul li a:link {
-    padding: 1rem;
+
+.caja-menu-navegacion ul li a,
+.caja-menu-navegacion ul li a:link {
+    padding: 0.6rem;
     line-height: 3.5rem;
-    
-    
-    
+
+
+
 
 
 }
 
-.box-border ul {
+.caja-menu-navegacion ul {
     text-align: right;
     font-weight: bold;
-    font-family:'Times New Roman', Times, serif;    
-    
+    font-family: 'Times New Roman', Times, serif;
+
 }
 
-a.hyperlink {
-    /* padding: 2rem; */
-    /* background-color: lightslategray; */
+a.hipervinculos {
     text-align: left;
     font-size: 1.9rem;
     text-decoration: none;
-    
+
 
 
 }
 
-#mysearch {
+#caja-de-busqueda {
     border-radius: 3rem;
-    border-style:solid;
+    border-style: solid;
     max-width: fit-content;
     padding: 1rem 1rem 1rem 1rem;
     margin-left: 0.5rem;
     background-color: rgb(235, 242, 247);
     font-weight: bold;
-    
+
 }
 
-a.hyperlink:hover {
+a.hipervinculos:hover {
     background-color: rgb(139, 180, 180);
 
 }
 
 
-/* tr .table-container {
-    border-radius: solid;
-    border-style: groove;
-    color: lightskyblue;
-    padding-bottom: 15rem;
-   
-
-} */
-
-.fill-table {
+.tabla-general {
 
     border-collapse: separate;
     margin: 0 auto;
@@ -192,72 +190,127 @@ a.hyperlink:hover {
 
 }
 
-.fill-table .title-head tr,
-.content-tbl tr,
-.fill-table .title-head tr td,
-.content-tbl tr td {
-
-    /* border: .1rem solid rgb(64, 72, 179); */
-}
-
-.title-head tr th,
-.content-tbl tr td {
+.tabla-general .titulos-tabla tr,
+.contenido-tabla tr,
+.tabla-general .titulos-tabla tr td,
+.contenido-tabla tr td,
+.titulos-tabla tr th,
+.contenido-tabla tr td {
     font-size: 2rem;
     text-align: center;
-    padding: 3.5rem;
+    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+
 
 }
 
-.title-head tr th {
-    background-color: rgb(119, 199, 199);
+.titulos-tabla tr th img {
+    width: 2.8rem;
+
+}
+
+.titulos-tabla tr th {
+    background-color: rgb(187, 231, 231);
     border-style: none;
     border-radius: 2rem;
 
+} 
 
+.titulos-tabla tr th img,  
+.titulos-tabla tr th span  {
+display: block;
+margin: 0 auto;
 
-}
+}   
 
-.content-tbl tr td {
+.contenido-tabla tr td,
+.contenido-tabla tr td a {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border-radius: 1rem;
+    text-decoration: none;
+    
 
 
 }
 
-.content-tbl tr:hover {
+.contenido-tabla tr:hover {
     background-color: rgb(139, 180, 180);
 
 
-
 }
 
-.content-tbl tr:nth-child(odd) {
+
+.contenido-tabla tr:nth-child(odd) {
     background-color: rgb(229, 226, 226);
 }
 
-.content-tbl tr td img {
+.contenido-tabla tr td img {
     width: 10rem;
     display: none;
 }
 
-.content-tbl tr td a:hover>img {
+.contenido-tabla tr td a:hover img {   
     display: block;
 }
 
-.title-head tr th:nth-child(7) {
+.contenido-tabla tr th  {
+    display: block;
+}
+
+
+.titulos-tabla tr th:nth-child(7) {
     padding: 1rem;
     width: 3rem;
 
 }
 
-.content-tbl tr td:nth-child(2) {
+.contenido-tabla tr td:nth-child(2) {
     font-weight: bold;
 
 }
 
-.content-tbl tr td:nth-child(8) {
+.contenido-tabla tr td:nth-child(8) {
     font-size: 1.5rem;
     padding: 0 1rem;
 
 }
+
+.ubicacion-img tr th img {
+    width: 13rem;
+}
+
+/****************************Esta es la seccion del Links***************************/
+/****************************Esta es la seccion del Links***************************/
+/****************************Esta es la seccion del Links***************************/
+
+#titulo-links {
+    font-size: 4rem;
+    text-align: center;    
+    
+}
+
+
+.caja-titulo-links {
+    position: relative;
+    width: 100%;
+    border-style: double;
+    background-color:  rgb(197, 187, 187);
+}
+   
+.titulo-proyecto h2 {
+    border-style:groove;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 19rem;
+    margin: 0.5rem;
+    margin-left: 2rem;
+}
+
+.nombre-link {
+margin-left: 2rem;
+
+}
+
+
